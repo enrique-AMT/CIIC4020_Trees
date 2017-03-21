@@ -124,11 +124,10 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 		/*******************************************************/
 		// SOME MISSING CODE HERE -- DISCOVER IT AN ADD... 
 		// AS SPECIFIED IN EXERCISE 4. 
-		if(numChildren(ntd)>1)
-		throw new IllegalArgumentException
-		("Cannot remove a leaf having more than one child."); 
+		parent.setChildren(ntd.getChildren());
 		// discard the removed node
 		ntd.discard(); 
+		
 		
 		size--;    // adjust size
 		return etr;   // return removed value
