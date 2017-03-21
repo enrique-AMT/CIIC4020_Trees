@@ -11,13 +11,11 @@ public class TreeTester8 {
 		LinkedBinaryTree<Integer> t = Utils.buildExampleTreeAsLinkedBinaryTree(); 
 
 		// display content as a tree
-		Utils.displayTree("The structure of the tree is: ", t);
+		Utils.displayTree("Tree t: ", t);
 		
-		// display elements as a list
-		Utils.displayTreeElements("The elements of the tree are: ", t);
 		LinkedBinaryTree<Integer> t2 = t.clone();
 		// display elements as a list
-				Utils.displayTree("The elements of the tree are: ", t2);
+		Utils.displayTree("clone of t: ", t2);
 	}
 
 }

@@ -14,7 +14,6 @@ import treeInterfaces.Position;
 public class TreeTester7 {
 	public static void main(String[] args) throws CloneNotSupportedException { 
 		LinkedTree<String> t = new LinkedTree<>();
-		LinkedTree<String> t1 = new LinkedTree<>();
 		
 		// add nodes and data to the tree
 		Position<String> p = t.addRoot("ROOT"); 	
@@ -39,10 +38,9 @@ public class TreeTester7 {
 		p1 = t.addChild(p1, "Ana"); 
 		t.addChild(p, "Elegancia"); 
 		
-		Utils.displayTree("The tree is: ", t);
 		
-		LinkedTree<String> t2 = t1.clone(); 
-		Utils.displayTree("Clone of t", t2); 
+		LinkedTree<String> t2 = t.clone(); 
+		Utils.displayTree("Clone of t:", t2); 
 		
 		
 	}
